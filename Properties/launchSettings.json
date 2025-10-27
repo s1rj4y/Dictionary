@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Dictionary": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DB_PASSWORD": "061289"
+      }
+    }
+  }
+}
