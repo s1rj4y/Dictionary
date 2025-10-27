@@ -1,5 +1,5 @@
-﻿using System.Windows;
-using Dictionary.ViewModel;
+﻿using Dictionary.ViewModel;
+using System.Windows;
 
 namespace Dictionary;
 

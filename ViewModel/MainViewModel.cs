@@ -1,10 +1,10 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
-using System.Collections.ObjectModel;
-using Dictionary.Table;
 using CommunityToolkit.Mvvm.Input;
-using System.Windows;
 using Dictionary.Database;
+using Dictionary.Table;
 using MySql.Data.MySqlClient;
+using System.Collections.ObjectModel;
+using System.Windows;
 
 namespace Dictionary.ViewModel;
 
@@ -15,7 +15,7 @@ public partial class MainViewModel : ObservableObject
         DictionaryEntries = new ObservableCollection<DictionaryEntry>();
         LoadEntries();
     }
-    
+
     // binding properties with the UI
     [ObservableProperty]
     private string termText;
@@ -113,7 +113,7 @@ public partial class MainViewModel : ObservableObject
     }
 
     // filling and loading of entries into DataGrid
-    public void LoadEntries ()
+    public void LoadEntries()
     {
         var list = new ObservableCollection<DictionaryEntry>();
         using (var connection = DictionaryDb.GetConnection())
@@ -135,7 +135,7 @@ public partial class MainViewModel : ObservableObject
                         Synonym = reader.GetString(3)
                     });
                 }
-            }            
+            }
         }
         DictionaryEntries = list;
     }
@@ -143,7 +143,7 @@ public partial class MainViewModel : ObservableObject
     // fills TextBoxes when entry is selected
     partial void OnSelectedDictionaryEntryChanged(DictionaryEntry? value)
     {
-        if (value is not  null)
+        if (value is not null)
         {
             TermText = value.Term;
             DefinitionText = value.Definition;
@@ -151,7 +151,7 @@ public partial class MainViewModel : ObservableObject
         }
         else
         {
-            TermText = string.Empty; 
+            TermText = string.Empty;
             DefinitionText = string.Empty;
             SynonymText = string.Empty;
         }
