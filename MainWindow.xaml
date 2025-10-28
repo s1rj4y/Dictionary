@@ -57,10 +57,13 @@
             </Border>
             <Border Grid.Column="1"
                     Grid.Row="2"
-                    Margin="5">
+                    Margin="5"
+                    Padding="5"
+                    CornerRadius="10"                    
+                    Background="#171717">
                 <TextBox x:Name="txtBoxTerm"
                          Text="{Binding TermText, UpdateSourceTrigger=PropertyChanged}"
-                         Background="#171717"
+                         Background="Transparent"
                          FontSize="24"
                          Foreground="#FFE6D4"
                          BorderThickness="0"
@@ -82,10 +85,13 @@
                        VerticalAlignment="Center"/>
             </Border>
             <Border Grid.Column="1"
-                    Margin="5">
+                    Margin="5"
+                    Padding="5"
+                    CornerRadius="10"                    
+                    Background="#171717">
                 <TextBox x:Name="txtBoxDefinition"
                          Text="{Binding DefinitionText, UpdateSourceTrigger=PropertyChanged}"
-                         Background="#171717"
+                         Background="Transparent"
                          Foreground="#FFE6D4"
                          FontSize="14"
                          TextWrapping="Wrap"
@@ -109,10 +115,13 @@
                 VerticalAlignment="Center"/>
             </Border>
             <Border Grid.Column="1"
-                    Margin="5">
+                    Margin="5"
+                    Padding="5"
+                    CornerRadius="10"                    
+                    Background="#171717">
                 <TextBox x:Name="txtBoxSynonym"
                          Text="{Binding SynonymText, UpdateSourceTrigger=PropertyChanged}"
-                         Background="#171717"
+                         Background="Transparent"
                          FontSize="24"
                          Foreground="#FFE6D4"
                          BorderThickness="0"
