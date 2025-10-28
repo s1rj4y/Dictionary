@@ -34,7 +34,7 @@
             <Border Grid.Column="1">
                 <Label x:Name="lblTitle"
                        Content="Dictionary"
-                       Foreground="White"
+                       Foreground="#FFE6D4"
                        FontSize="38"
                        FontWeight="Bold"
                        HorizontalAlignment="Center"
@@ -51,7 +51,7 @@
             <Border Margin="5">
                 <Label x:Name="lblTerm"
                        Content="Term"
-                       Foreground="White"
+                       Foreground="#FFE6D4"
                        FontSize="24"
                        VerticalAlignment="Center"/>
             </Border>
@@ -62,7 +62,7 @@
                          Text="{Binding TermText, UpdateSourceTrigger=PropertyChanged}"
                          Background="#171717"
                          FontSize="24"
-                         Foreground="White"
+                         Foreground="#FFE6D4"
                          BorderThickness="0"
                          VerticalAlignment="Center"/>
             </Border>
@@ -77,7 +77,7 @@
             <Border Margin="5">
                 <Label x:Name="lblDefinition"
                        Content="Definition"
-                       Foreground="White"
+                       Foreground="#FFE6D4"
                        FontSize="24"
                        VerticalAlignment="Center"/>
             </Border>
@@ -86,7 +86,7 @@
                 <TextBox x:Name="txtBoxDefinition"
                          Text="{Binding DefinitionText, UpdateSourceTrigger=PropertyChanged}"
                          Background="#171717"
-                         Foreground="White"
+                         Foreground="#FFE6D4"
                          FontSize="14"
                          TextWrapping="Wrap"
                          AcceptsReturn="True"
@@ -104,7 +104,7 @@
             <Border Margin="5">
                 <Label x:Name="lblSynonym"
                 Content="Synonym"
-                Foreground="White"
+                Foreground="#FFE6D4"
                 FontSize="24"
                 VerticalAlignment="Center"/>
             </Border>
@@ -114,7 +114,7 @@
                          Text="{Binding SynonymText, UpdateSourceTrigger=PropertyChanged}"
                          Background="#171717"
                          FontSize="24"
-                         Foreground="White"
+                         Foreground="#FFE6D4"
                          BorderThickness="0"
                          VerticalAlignment="Center"/>
             </Border>
@@ -139,7 +139,7 @@
                         Content="Add"
                         Command="{Binding AddCommand}"
                         Background="Transparent"
-                        Foreground="White"
+                        Foreground="#FFE6D4"
                         FontSize="32"
                         BorderThickness="0"
                         Cursor="Hand">
@@ -162,7 +162,7 @@
                         Content="Delete"
                         Command="{Binding DeleteCommand}"
                         Background="Transparent"
-                        Foreground="White"
+                        Foreground="#FFE6D4"
                         FontSize="32"
                         BorderThickness="0"
                         Cursor="Hand">
@@ -185,7 +185,7 @@
                         Content="Clear"
                         Command="{Binding ClearCommand}"
                         Background="Transparent"
-                        Foreground="White"
+                        Foreground="#FFE6D4"
                         FontSize="32"
                         BorderThickness="0"
                         Cursor="Hand">
@@ -209,7 +209,7 @@
                   SelectedItem="{Binding SelectedDictionaryEntry, Mode=TwoWay}"
                   AutoGenerateColumns="False"
                   Background="#171717"
-                  Foreground="White"                  
+                  Foreground="#FFE6D4"                  
                   HeadersVisibility="Column"
                   BorderThickness="0"
                   RowHeight="40"
@@ -235,7 +235,7 @@
             <DataGrid.RowStyle>
                 <Style TargetType="DataGridRow">
                     <Setter Property="Background" Value="#171717"/>
-                    <Setter Property="Foreground" Value="White"/>
+                    <Setter Property="Foreground" Value="#FFE6D4"/>
                     <Setter Property="FontSize" Value="18"/>
                 </Style>
             </DataGrid.RowStyle>
@@ -243,7 +243,7 @@
             <DataGrid.CellStyle>
                 <Style TargetType="DataGridCell">
                     <Setter Property="Background" Value="#171717"/>
-                    <Setter Property="Foreground" Value="White"/>
+                    <Setter Property="Foreground" Value="#FFE6D4"/>
                     <Setter Property="BorderThickness" Value="0"/>
                     <!--removing border when focused or selected-->
                     <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
@@ -252,7 +252,7 @@
                     <Style.Triggers>
                         <Trigger Property="IsSelected" Value="True">
                             <Setter Property="Background" Value="#171717"/>
-                            <Setter Property="Foreground" Value="White"/>
+                            <Setter Property="Foreground" Value="#FFE6D4"/>
                             <Setter Property="BorderBrush" Value="Transparent"/>
                         </Trigger>
                         <Trigger Property="IsMouseOver" Value="True">
@@ -265,7 +265,7 @@
             <DataGrid.ColumnHeaderStyle>
                 <Style TargetType="DataGridColumnHeader">
                     <Setter Property="Background" Value="#222"/>
-                    <Setter Property="Foreground" Value="White"/>
+                    <Setter Property="Foreground" Value="#FFE6D4"/>
                     <Setter Property="FontWeight" Value="Bold"/>
                     <Setter Property="FontSize" Value="20"/>
                 </Style>
